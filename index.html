@@ -1,136 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible="IE=edge">
+    <meta http-equiv="X-UA-Compatible=" IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matias' Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .profile-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            padding-top:0px;
-            background-color: #f8f9fa;
-            border-radius: 10px;
-        }
-        .profile-header {
-            text-align: center;
-            margin-bottom: 30px;
-            position: sticky;
-            top: 0;
-            background-color: #f8f9fa;
-            padding: 10px;
-            z-index: 1000;
-            border-bottom: 1px solid #ddd;
-        }
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 5px;
-            object-fit: cover;
-        }
-        .social-links {
-            margin-bottom: 5px;
-        }
-        .social-links a {
-            margin: 0 10px;
-            font-size: 1.2rem;
-            color: #6c757d;
-        }
-        .card {
-            height: 100%;
-        }
-        .card-status {
-            font-size: 0.9rem;
-            border-radius: 15px;
-            padding: 2px 8px;
-        }
-        .status-building { background-color: #d1ecf1; color: #0c5460; }
-        .status-success { background-color: #d4edda; color: #155724; }
-        .status-discontinued { background-color: #fff3cd; color: #856404; }
-        .status-failed { background-color: #f8d7da; color: #721c24; }
-    </style>
+    <link href="./styles/style.css" rel="stylesheet">
+
 </head>
+
 <body>
 
-<div class="profile-container">
-    <div class="profile-header">
-        <img src="./PXL_20231029_004113860.jpg" alt="Profile Image" class="profile-img">
-        <h3 class="fw-bold">Matias Fontecilla</h3>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/matias-fontecilla/" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/funtoseeya" target="_blank"><i class="bi bi-github"></i></a>
+    <div class="page-container">
+        <div class="profile-header">
+            <img src="./assets/matias-img.jpg" alt="Profile Image" class="profile-img">
+            <h3 class="fw-bold">Matias Fontecilla</h3>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/matias-fontecilla/" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/funtoseeya" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+            <p class="text-muted">Squamish, BC</p>
+            <p>Product manager by day, tinkerer by night. Here are some of the cool things that I've done.</p>
         </div>
-        <p class="text-muted">Vancouver, BC</p>
-        <p>Product manager by day, tinkerer by night. Here are some of the projects that make me happy.</p>
+
+        <div class="row gy-3 p-2">
+            <div class="d-flex align-items-center justify-content-end mb-3">
+                <p class="me-2 mb-0">Show</p>
+                <select id="card-filter" class="form-select" style="width: 200px;">
+                    <option value="all">All</option>
+                    <option value="ventures">Ventures</option>
+                    <option value="experiences">Experiences</option>
+                    <option value="random">Random</option>
+                    <option value="work">Work</option>
+                </select>
+            </div>
+            
+            
+
+            <div class="col-md-6">
+                <div class="card p-3" data-type="ventures">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <span class="card-status status-ventures">Ventures</span>
+                            <h5 class="fw-bold mb-1">Cuadro.io</h5>
+
+                            <p class="text-muted">2024</p>
+                            <p>Founder</p>
+                            <p class="text-muted small">We're on a quest to remove the barriers of entry to being able to make sense of your data.
+
+                            </p>
+                            <a href="https://cuadro.io" target="_blank" class="nav-button">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3" data-type="experiences">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <span class="card-status status-experiences">Experiences</span>
+                            <h5 class="fw-bold mb-1">Exploring the coast mountains 
+                            </h5>
+                            
+                            <p class="text-muted">2020-2024</p>
+                            <p>Ski touring</p>
+                            <p class="text-muted small">These are my reflections on the snowy realms I've explored, each with its unique stories, challenges, and landscapes that have etched themselves into memory.
+
+                            </p>
+                            <a href="./exploring-coast-mountains.html" class="nav-button">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3" data-type="experiences">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <span class="card-status status-experiences">Experiences</span>
+
+                            <h5 class="fw-bold mb-1">Soup Kitchen</h5>
+                            <p class="text-muted">2024</p>
+                            <p>Volunteer @ Squamish Helping Hands Society</p>
+                            <p class="text-muted small">Innovative tech startup revolutionizing data compression with
+                                groundbreaking, proprietary algorithms in the Valley.</p>
+                            <a href="./blog-template.html" class="nav-button">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3" data-type="ventures">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <span class="card-status status-ventures">Ventures</span>
+
+                            <h5 class="fw-bold mb-1">Flipper's Fury Hot Sauce</h5>
+                            <p class="text-muted">2024</p>
+                            <p></p>
+                            <p class="text-muted small">Innovative tech startup revolutionizing data compression with
+                                groundbreaking, proprietary algorithms in the Valley.</p>
+                            <a href="./blog-template.html" class="nav-button">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3" data-type="work">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <span class="card-status status-work">Work</span>
+
+                            <h5 class="fw-bold mb-1">School Climate AI Surveys</h5>
+                            <p class="text-muted">2021-2024</p>
+                            <p>Product Manager @ ThoughtExchange</p>
+                            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            <a href="./blog-template.html" class="nav-button">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3" data-type="work">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <span class="card-status status-work">Work</span>
+
+                            <h5 class="fw-bold mb-1">Workflow Automation </h5>
+                            <p class="text-muted">2014 - 2016</p>
+                            <p>Product & Service Manager @ Interfacing</p>
+                            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3" data-type="work">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <span class="card-status status-work">Work</span>
+                            <h5 class="fw-bold mb-1">Business Process Management</h5>
+                            <p class="text-muted">2012 - 2014</p>
+                            <p>Product Analyst @ Interfacing</p>
+                            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="row gy-3">
-        <div class="col-md-6">
-            <div class="card p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                    <div>
-                        <h5 class="fw-bold mb-1">Cuadro.io</h5>
-                        <p class="text-muted">2024</p>
-                        <p>Founder</p>
-                        <p class="text-muted small">Innovative tech startup revolutionizing data compression with groundbreaking, proprietary algorithms in the Valley.</p>
-                        <a href="https://cuadro.io" target="_blank">Learn more</a>
-                    </div>
-                    <span class="card-status status-building">Building</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                    <div>
-                        <h5 class="fw-bold mb-1">School Climate AI Surveys</h5>
-                        <p class="text-muted">2021-2024</p>
-                        <p>Product Manager @ ThoughtExchange</p>
-                        <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <a href="https://ThoughtExchange.com" target="_blank">Learn more</a>
-                    </div>
-                    <span class="card-status status-success">Delivered</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                    <div>
-                        <h5 class="fw-bold mb-1">Workflow Automation </h5>
-                        <p class="text-muted">2014 - 2016</p>
-                        <p>Product & Service Manager @ Interfacing</p>
-                        <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                    </div>
-                    <span class="card-status status-discontinued">Discontinued</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                    <div>
-                        <h5 class="fw-bold mb-1">Business Process Management</h5>
-                        <p class="text-muted">2012 - 2014</p>
-                        <p>Product Analyst @ Interfacing</p>
-                        <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                    </div>
-                    <span class="card-status status-failed">Failed</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Include Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/scripts.js"></script>
+    <!-- Include Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </body>
+
 </html>
