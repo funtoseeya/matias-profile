@@ -48,13 +48,17 @@
 }
 
 .blog-body-img {
-    margin:10px;
-    clear:both;
-    max-width:40%;
-    max-height:300px;
+    margin: 10px;
+    clear: both;
+    max-width: 40%;
+    max-height: 300px;
     object-fit: cover;
-    float:right;
+    float: right;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.8); /* Light border */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1); /* Enhanced shadow for floating effect */
 }
+
 
 .profile-img {
     width: 120px;
