@@ -12,38 +12,57 @@
 </head>
 
 <body>
-    <img src="./assets/youtube-brainrot.png" class="blog-header-img">
+    <img src="./assets/detube-banner.png" class="blog-header-img">
 
     <div class="page-container">
         <div class="page-header">
             <div class="row">
                 <div class="col-12">
                     <a href="./index.html" class="nav-button">Home</a>
-                    <h1 class="mt-3">A Minimal, Distraction-Free YouTube</h1>
+                    <h1 class="mt-3">Detube</h1>
                     <h3>Watching videos shouldn’t hijack your day</h3>
                     <p>
-                        I love YouTube—but it doesn’t love me back. Endless feeds, rage-bait, and Shorts steal hours I could spend on things that matter. So I built my own version.
+                        I love YouTube, but it doesn’t love me back. Endless feeds, adds, and Shorts viewing style steal hours I
+                        could spend on things that matter. So I built my own version.
                     </p>
                 </div>
             </div>
         </div>
 
-        <!--post-->
         <div class="row blog-body">
             <div class="col-12">
+                <img src="./assets/detube-landing.PNG" class="blog-body-img">
+
                 <img src="./assets/tele-screenshot.png" class="blog-body-img">
-                <h4>Reclaiming YouTube</h4>
-                <h5>Search, watch, repeat—no distractions</h5>
-
                 <p>
-                    I kept finding myself trapped in the scroll, clicking on videos I didn’t really care about, losing hours, and leaving frustrated. YouTube’s algorithms aren’t built to help me—they’re built to keep me hooked.
+                    I kept finding myself trapped in the scroll, clicking on videos I didn’t really care about, losing
+                    hours, and leaving frustrated. YouTube’s algorithms aren’t built to help me. They’re built to keep me
+                    hooked.
                 </p>
                 <p>
-                    So I stripped it down. My YouTube is just search and watch. No feeds. No Shorts. No manipulative recommendations. Just me and the videos I actually came to see. Finally, a YouTube that respects my time and attention.
+                    So I stripped it down. My version, Detube, is just search and watch. No feeds. No Shorts. No manipulative
+                    recommendations. Just me and the videos I actually came to see. Finally, a YouTube that respects my time
+                    and attention.
                 </p>
-                <p> The tech is quite simple. I use python to query Youtube's API and pass the search query, desired sorting, and whether you want to include shorts or not. I use vanilla JS for client-side (search, sort, refresh, render, etc.), and bootstrap for style.</p>
-
-                <p> I haven't yet released it. You can find it on my Github for now.</p>
+                <p>
+                    The work is complete. I've built a minimal YouTube interface that lets me search and watch videos
+                    without ads, algorithmic feeds, or the other things that make YouTube a time sink.
+                </p>
+                <p>
+                    You can try it <a href="https://tele-shyh.onrender.com/" target="_blank">here</a>. It's nothing fancy, but that's the point.
+                </p>
+                <p>
+                    I built it using Python for the backend to interact with YouTube's API, and vanilla JavaScript for
+                    the frontend to handle user interactions. Bootstrap is used for styling to keep things clean and
+                    simple.
+                </p>
+                <p>
+                    I used this as a project to learn how to work with APIs and backends. Previously I only worked with
+                    client-side applications. The tech is quite simple: Python queries YouTube's API and passes the search query,
+                    sorting preferences, and whether Shorts should be included. Vanilla JS handles the search, sorting,
+                    refresh, and rendering, while Bootstrap keeps everything styled neatly.
+                </p>
+                
             </div>
         </div>
     </div>
