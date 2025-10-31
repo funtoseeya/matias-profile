@@ -59,6 +59,17 @@
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1); /* Enhanced shadow for floating effect */
 }
 
+.blog-bottom-img {
+    margin: 10px;
+    clear: both;
+    max-width: 40%;
+    max-height: 300px;
+    object-fit: cover;
+    float: right;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.8); /* Light border */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1); /* Enhanced shadow for floating effect */
+}
 
 .profile-img {
     width: 120px;
@@ -85,7 +96,7 @@
     padding: 2px 8px;
 }
 .status-work { background-color: #d1ecf1; color: #0c5460; }
-.status-ventures { background-color: #d4edda; color: #155724; }
+.status-projects { background-color: #d4edda; color: #155724; }
 .status-random { background-color: #f8d7da; color: #721c24; }
 .status-experiences { background-color:#fff3cd ; color: #856404; }
 
